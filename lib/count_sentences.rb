@@ -26,12 +26,13 @@ class String
   end
 
   def count_sentences
-#self.each do |string|
-#string.split.end_with?(!,.,?)
+    #self.each do |string|
+    #string.split.end_with?(!,.,?)
 
-#self.split(/[.?!]/).reject 
+    #self.split(/[.?!]/).reject 
 
-new_array = self.split(/[.?!]/).reject {|string| string.empty?}
-    return new_array.length
+    #new_array = self.split(/[.?!]/).reject {|string| string.empty?}
+    #    return new_array.length
+    self.split(/[.!?]+/).count
   end
 end
